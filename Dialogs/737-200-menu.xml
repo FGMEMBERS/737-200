@@ -4,7 +4,7 @@
 
   <default>
     <menu n="10">
-      <label>Boeing 737 100</label>
+      <label>Boeing 737-200</label>
       <enabled type="bool">true</enabled>
       <item>
         <label>Select Livery</label>
