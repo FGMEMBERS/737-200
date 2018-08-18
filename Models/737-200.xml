@@ -1705,7 +1705,7 @@
     </center>
     <axis>
       <x>  0 </x>
-      <y> -1 </y>
+      <y>  1 </y>
       <z>  0 </z>
     </axis>
   </animation>
@@ -1722,7 +1722,7 @@
     </center>
     <axis>
       <x>  0 </x>
-      <y> -1 </y>
+      <y>  1 </y>
       <z>  0 </z>
     </axis>
   </animation>
@@ -1739,7 +1739,7 @@
     </center>
     <axis>
       <x>  0 </x>
-      <y> -1 </y>
+      <y>  1 </y>
       <z>  0 </z>
     </axis>
   </animation>
@@ -2095,6 +2095,7 @@
   </model>
 
   <model>
+    <name>Right-Flash</name>
     <path>Aircraft/737-200/Models/light/flash.xml</path>
     <offsets>
       <x-m> -4.180 </x-m>
@@ -2117,6 +2118,7 @@
   </model>
 
   <model>
+    <name>Left-Flash</name>
     <path>Aircraft/737-200/Models/light/flash.xml</path>
     <offsets>
       <x-m> -4.180 </x-m>
@@ -2141,17 +2143,16 @@
   <animation>
     <name>All-Taxi-Light</name>
     <object-name>Left-Taxi-Light</object-name>
+    <object-name>Left-Flash</object-name>
     <object-name>Right-Taxi-Light</object-name>
+    <object-name>Right-Flash</object-name>
   </animation>
 
   <animation>
     <type>select</type>
     <object-name>All-Taxi-Light</object-name>
     <condition>
-      <equals>
-        <property>controls/switches/landing-light</property>
-        <value> 1 </value>
-      </equals>
+      <property>controls/lighting/landing-lights</property>
     </condition>
   </animation>
 

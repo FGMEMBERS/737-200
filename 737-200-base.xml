@@ -7,6 +7,23 @@
     <author>BARANGER Emmanuel (3D/FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
+    <rating>
+      <FDM type="int">1</FDM>
+      <systems type="int">1</systems>
+      <cockpit type="int">2</cockpit>
+      <model type="int">4</model>
+    </rating>
+    <tags>
+      <tag>transport</tag>
+      <tag>boeing</tag>
+      <tag>1960s</tag> <!-- first flight of this variant: 1967 -->
+      <tag>1970s</tag>
+      <tag>1980s</tag> <!-- last delivery: 1988 -->
+      <tag>ifr</tag>
+      <tag>retractable-gear</tag>
+      <tag>jet</tag>
+      <tag>twin-engine</tag>
+    </tags>
 
     <fuel-fraction>0.8</fuel-fraction>
 
@@ -16,6 +33,7 @@
 
     <model>
       <path>Aircraft/737-200/Models/737-200.xml</path>
+      <fallback-model-index type="int">205</fallback-model-index>
       <livery>
         <file type="string">default</file>
       </livery>
@@ -47,8 +65,9 @@
         <int type="int">0</int>  <!-- 3 immat -->
         <int type="int">0</int>  <!-- 4 immat -->
         <int type="int">0</int>  <!-- 5 immat -->
-        <int type="bool">0</int> <!-- 6 smoke -->
+        <int type="int">0</int>  <!-- 6 smoke -->
         <int type="int">0</int>  <!-- 7 color -->
+        <int type="int" alias="/controls/lighting/landing-lights"/>
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
       </generic>
@@ -72,7 +91,10 @@
         <name>j/k</name>
         <desc>Spoilers</desc>
       </key>
-
+      <key>
+        <name>Ctrl+L</name>
+        <desc>Toggle landing lights</desc>
+      </key>
     </help>
 
     <menubar include="Dialogs/737-200-menu.xml"/>

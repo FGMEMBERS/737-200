@@ -27,7 +27,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>controls/switches/landing-light</property>
+        <property>controls/lighting/landing-lights</property>
       </binding>
     </action>
   </animation>
@@ -35,7 +35,7 @@
   <animation>
     <type>rotate</type>
     <object-name>Switch</object-name>
-    <property>controls/switches/landing-light</property>
+    <property>controls/lighting/landing-lights</property>
     <factor> 35 </factor>
     <axis>
       <x>  0 </x>
