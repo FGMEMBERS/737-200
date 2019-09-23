@@ -2,6 +2,15 @@
 
 <PropertyList>
 
+  <key n="12">
+    <name>Ctrl+L</name>
+    <desc>Toggle landing lights</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/lighting/landing-lights</property>
+    </binding>
+  </key>
+
   <key n="100">
     <name>d</name>
     <desc>Crew doors</desc>
@@ -32,7 +41,6 @@
       <property>controls/engines/engine[1]/reverser</property>
     </binding>
   </key>
-
 
 </PropertyList>
 
